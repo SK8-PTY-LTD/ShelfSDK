@@ -1,0 +1,8 @@
+curl -L -o readme.md "https://raw.githubusercontent.com/jacktator/Shelf_Web/master/README.md?token=AFYnPL4lTUYMKca4cbp8AUt8JfgNKRYyks5WKSA0wA%3D%3D"
+curl -L -o shelf.js "http://noodlezero.shelf.is/lib/shelf/js/shelf-doc.js"
+jsdoc shelf.js readme.md -c conf.json -t bower_components/jaguarjs-jsdoc/
+
+
+
+curl -L -o readme.md "https://raw.githubusercontent.com/jacktator/Shelf_Web/master/README.md?token=AFYnPDtO93JbaWb6lMAAz1qBFjzpMOOmks5WHguiwA%3D%3D"
+jsdoc shelf-doc.js readme.md -c conf.json -t bower_components/jsdoc-oblivion/template

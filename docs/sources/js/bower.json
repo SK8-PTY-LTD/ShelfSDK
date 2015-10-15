@@ -1,0 +1,24 @@
+{
+  "name": "Shelf_JS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jacktator/Shelf-Web",
+  "authors": [
+    "Xujie Song <app@sk8.asia>"
+  ],
+  "description": "Docs for shelf.min.js",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jaguarjs-jsdoc": "git@github.com:davidshimjs/jaguarjs-jsdoc.git",
+    "jsdoc-oblivion": "git@github.com:miguelmota/jsdoc-oblivion.git"
+  }
+}
