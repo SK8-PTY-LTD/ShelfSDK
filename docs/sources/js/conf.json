@@ -11,7 +11,8 @@
 		"cleverLinks": true,
 		"monospaceLinks": true,
 		"default": {
-			"outputSourceFiles": true
+			"outputSourceFiles": false,
+			"destination": "../../js/"
 		},
 		"applicationName": "Shelf JS Guide",
 		"googleAnalytics": "",
