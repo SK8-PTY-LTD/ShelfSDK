@@ -182,29 +182,6 @@
             </ul>
         </li>
     
-        <li class="item" data-name="SH.Page">
-            <span class="title">
-                <a href="SH.Page.html">SH.Page</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            <span class="subtitle">Methods</span>
-            
-                <li data-name="SH.Page#new"><a href="SH.Page.html#new">new</a></li>
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
         <li class="item" data-name="SH.Product">
             <span class="title">
                 <a href="SH.Product.html">SH.Product</a>
@@ -350,6 +327,10 @@
             
             <span class="subtitle">Members</span>
             
+                <li data-name="SH.Transaction.GATEWAY_X"><a href="SH.Transaction.html#.GATEWAY_X">GATEWAY_X</a></li>
+            
+                <li data-name="SH.Transaction.METHOD_X"><a href="SH.Transaction.html#.METHOD_X">METHOD_X</a></li>
+            
                 <li data-name="SH.Transaction.STATUS_X"><a href="SH.Transaction.html#.STATUS_X">STATUS_X</a></li>
             
             </ul>
@@ -485,7 +466,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2063
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2132
         </div> -->
         
     </div>
@@ -532,6 +513,29 @@
 	</thead>
 	
 	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>ACL</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">AV.ACL</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
 	
 	
         <tr>
@@ -674,6 +678,52 @@
 	
         <tr>
             
+                <td class="name"><code>paymentMethod</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SH.Transaction.html#.METHOD_X">SH.Transaction.METHOD_X</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>paymentGateway</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SH.Transaction.html#.GATEWAY_X">SH.Transaction.GATEWAY_X</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
                 <td class="name"><code>purchase</code></td>
             
             
@@ -681,6 +731,29 @@
             
                 
 <span class="param-type"><a href="SH.Purchase.html">SH.Purchase</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>charge</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
 
 
             
@@ -714,6 +787,29 @@
             
             
             <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>Purchase</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>detail save the details of each purchase entry</p></td>
         </tr>
 	
 	
@@ -797,6 +893,244 @@
         <h3 class="subsection-title">Members</h3>
         
         <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".GATEWAY_X"><span class="type-signature static">static</span>SH.Transaction.GATEWAY_X</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>SH.Transaction.GATEWAY_X is the available gateway for payment.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>GATEWAY_STRIPE</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>String indicating payment is done by <a target="_blank" href="https://stripe.com/">Stripe</a></p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>GATEWAY_SHELF</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>String indicating payment is done by <a target="_blank" href="http://shelfsdk.com/">Shelf</a></p></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".METHOD_X"><span class="type-signature static">static</span>SH.Transaction.METHOD_X</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>SH.Transaction.METHOD_X is the available method for payment.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>METHOD_CARD</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>String indicating transaction is paid by card.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>METHOD_CASH</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>String indicating transaction is paid by cash.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
             
 <dt>
     <div class="nameContainer">
@@ -888,7 +1222,7 @@
 	
         <tr>
             
-                <td class="name"><code>STATUS_INCOMPLETE</code></td>
+                <td class="name"><code>STATUS_REFUND_REQUESTED</code></td>
             
             
             <td class="type">
@@ -904,7 +1238,30 @@
             
             
             
-            <td class="description last"><p>Status code indicating transaction is incompleted.</p></td>
+            <td class="description last"><p>Status code indicating transaction is requested for refund.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>STATUS_REFUND_COMPLETED</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Status code indicating transaction is refunded.</p></td>
         </tr>
 	
 	
@@ -955,7 +1312,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2081
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2156
         </div> -->
         
     </div>
@@ -1070,7 +1427,7 @@ Initialize a new instance of the Class</p>
         
 
     
-    <pre class="prettyprint"><code><p>var transaction = SH.Transaction.new({&quot;id&quot;: &quot;abcd&quot;);</p></code></pre>
+    <pre class="prettyprint"><code><p>var transaction = SH.Transaction.new({&quot;id&quot;: &quot;abcd&quot;});</p></code></pre>
     
 
     
@@ -1093,7 +1450,7 @@ Initialize a new instance of the Class</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Fri Oct 16 2015 05:05:19 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Wed Oct 21 2015 04:11:15 GMT+1100 (AEDT)
         </footer>
     </div>
 </div>

@@ -182,29 +182,6 @@
             </ul>
         </li>
     
-        <li class="item" data-name="SH.Page">
-            <span class="title">
-                <a href="SH.Page.html">SH.Page</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            <span class="subtitle">Methods</span>
-            
-                <li data-name="SH.Page#new"><a href="SH.Page.html#new">new</a></li>
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
         <li class="item" data-name="SH.Product">
             <span class="title">
                 <a href="SH.Product.html">SH.Product</a>
@@ -350,6 +327,10 @@
             
             <span class="subtitle">Members</span>
             
+                <li data-name="SH.Transaction.GATEWAY_X"><a href="SH.Transaction.html#.GATEWAY_X">GATEWAY_X</a></li>
+            
+                <li data-name="SH.Transaction.METHOD_X"><a href="SH.Transaction.html#.METHOD_X">METHOD_X</a></li>
+            
                 <li data-name="SH.Transaction.STATUS_X"><a href="SH.Transaction.html#.STATUS_X">STATUS_X</a></li>
             
             </ul>
@@ -485,7 +466,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1242
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1276
         </div> -->
         
     </div>
@@ -553,6 +534,29 @@
             
             
             <td class="description last"><p>The buyer of this Purchase</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>shop</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SH.Shop.html">SH.Shop</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The shop of this Purchase</p></td>
         </tr>
 	
 	
@@ -720,13 +724,13 @@
 	
         <tr>
             
-                <td class="name"><code>transactionId</code></td>
+                <td class="name"><code>charge</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Ojbect</span>
 
 
             
@@ -736,7 +740,7 @@
             
             
             
-            <td class="description last"><p>The chargeId of the charge object used in Stripe</p></td>
+            <td class="description last"><p>The charge object used in Stripe</p></td>
         </tr>
 	
 	
@@ -1026,7 +1030,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1281
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1322
         </div> -->
         
     </div>
@@ -1196,7 +1200,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1339
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1380
         </div> -->
         
     </div>
@@ -1275,7 +1279,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1368
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1409
         </div> -->
         
     </div>
@@ -1375,7 +1379,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1262
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1298
         </div> -->
         
     </div>
@@ -1490,7 +1494,7 @@ Initialize a new instance of the Class</p>
         
 
     
-    <pre class="prettyprint"><code><p>var purchase = SH.Purchase.new();</p></code></pre>
+    <pre class="prettyprint"><code><p>var purchase = SH.Purchase.new({&quot;id&quot;: &quot;abcd&quot;});</p></code></pre>
     
 
     
@@ -1507,7 +1511,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1440
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1481
         </div> -->
         
     </div>
@@ -1607,7 +1611,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1419
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1460
         </div> -->
         
     </div>
@@ -1707,7 +1711,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1408
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1449
         </div> -->
         
     </div>
@@ -1807,7 +1811,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1381
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1422
         </div> -->
         
     </div>
@@ -1907,7 +1911,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1313
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1354
         </div> -->
         
     </div>
@@ -2031,7 +2035,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1348
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 1389
         </div> -->
         
     </div>
@@ -2137,7 +2141,7 @@ Initialize a new instance of the Class</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Fri Oct 16 2015 05:05:19 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Wed Oct 21 2015 04:11:15 GMT+1100 (AEDT)
         </footer>
     </div>
 </div>
