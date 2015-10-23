@@ -60,15 +60,11 @@
             
                 <li data-name="SH.clearCurrentPurchase"><a href="SH.html#.clearCurrentPurchase">clearCurrentPurchase</a></li>
             
-                <li data-name="SH.createAnonymousUser"><a href="SH.html#.createAnonymousUser">createAnonymousUser</a></li>
-            
                 <li data-name="SH.Error"><a href="SH.html#.Error">Error</a></li>
             
                 <li data-name="SH.initialize"><a href="SH.html#.initialize">initialize</a></li>
             
                 <li data-name="SH.log"><a href="SH.html#.log">log</a></li>
-            
-                <li data-name="SH.logout"><a href="SH.html#.logout">logout</a></li>
             
                 <li data-name="SH.openURL"><a href="SH.html#.openURL">openURL</a></li>
             
@@ -366,6 +362,8 @@
             
                 <li data-name="SH.User.become"><a href="SH.User.html#.become">become</a></li>
             
+                <li data-name="SH.User.createAnonymousUser"><a href="SH.User.html#.createAnonymousUser">createAnonymousUser</a></li>
+            
                 <li data-name="SH.User.logIn"><a href="SH.User.html#.logIn">logIn</a></li>
             
                 <li data-name="SH.User.logInWithMobilePhone"><a href="SH.User.html#.logInWithMobilePhone">logInWithMobilePhone</a></li>
@@ -383,6 +381,8 @@
                 <li data-name="SH.User.requestPasswordResetBySmsCode"><a href="SH.User.html#.requestPasswordResetBySmsCode">requestPasswordResetBySmsCode</a></li>
             
                 <li data-name="SH.User.resetPasswordBySmsCode"><a href="SH.User.html#.resetPasswordBySmsCode">resetPasswordBySmsCode</a></li>
+            
+                <li data-name="SH.User.signOut"><a href="SH.User.html#.signOut">signOut</a></li>
             
                 <li data-name="SH.User.signUp"><a href="SH.User.html#.signUp">signUp</a></li>
             
@@ -466,7 +466,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 39
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2878
         </div> -->
         
     </div>
@@ -579,7 +579,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 181
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2985
         </div> -->
         
     </div>
@@ -643,152 +643,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".createAnonymousUser">
-            
-            <span class="type-signature static">static</span>SH.createAnonymousUser<span class="signature">(<span class="optional">callback</span>)</span>
-        </h4>
-    
-        
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 191
-        </div> -->
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Create a new anonymous user via REST API <br>
-Can be integrated with REST API login <br></p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                <p>An object that has an optional success function, that takes no arguments and will be called on a successful push, and an error function that takes a AV.Error and will be called if the push failed.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a target="_blank" href="https://leancloud.cn/docs/js_guide.html#%E7%BB%91%E5%AE%9A%E7%AC%AC%E4%B8%89%E6%96%B9%E5%B9%B3%E5%8F%B0%E8%B4%A6%E6%88%B7">https://leancloud.cn/docs/js_guide.html#绑定第三方平台账户</a></li>
-        </ul>
-    </dd>
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-        <h5>Example</h5>
-        
-
-    
-    <pre class="prettyprint"><code><p>SH.createAnonymousUser({
-         success: function(user) {
-             //Access user here
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-});</p></code></pre>
-    
-
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id=".Error">
             
             <span class="type-signature static">static</span>SH.Error<span class="signature">(Error)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{String}</span>
@@ -796,7 +650,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 637
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 282
         </div> -->
         
     </div>
@@ -951,7 +805,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 50
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2889
         </div> -->
         
     </div>
@@ -1108,7 +962,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 287
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 3015
         </div> -->
         
     </div>
@@ -1225,158 +1079,6 @@ Can be integrated with REST API login <br></p>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".logout">
-            
-            <span class="type-signature static">static</span>SH.logout<span class="signature">(<span class="optional">callback</span>)</span>
-        </h4>
-    
-        
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 146
-        </div> -->
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Logout the currentUser and Create a new Anonymous user</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                <p>An object that has an optional success function, that takes no arguments and will be called on a successful push, and an error function that takes a AV.Error and will be called if the push failed.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><code>leancloud.cn/docs/rest_api.html</code></li>
-        </ul>
-    </dd>
-    
-    
-    
-    <dt class="tag-todo">TODO</dt>
-    <dd class="tag-todo">
-        <ul>
-            <li>Test if the function is working</li>
-        </ul>
-    </dd>
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-        <h5>Example</h5>
-        
-
-    
-    <pre class="prettyprint"><code><p>SH.logout({
-         success: function(user) {
-             //User logged out, return with the new anonymous user
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
-    
-
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id=".openURL">
             
             <span class="type-signature static">static</span>SH.openURL<span class="signature">(URL)</span>
@@ -1384,7 +1086,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 387
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 3115
         </div> -->
         
     </div>
@@ -1500,7 +1202,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 267
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2995
         </div> -->
         
     </div>
@@ -1624,7 +1326,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 320
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 3048
         </div> -->
         
     </div>
@@ -1815,7 +1517,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 350
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 3078
         </div> -->
         
     </div>
@@ -2005,7 +1707,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 296
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 3024
         </div> -->
         
     </div>
@@ -2190,7 +1892,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 277
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 3005
         </div> -->
         
     </div>
@@ -2320,7 +2022,7 @@ Can be integrated with REST API login <br></p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Wed Oct 21 2015 04:11:15 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Fri Oct 23 2015 11:48:31 GMT+1100 (AEDT)
         </footer>
     </div>
 </div>
