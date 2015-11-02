@@ -62,6 +62,8 @@
             
                 <li data-name="SH.Error"><a href="SH.html#.Error">Error</a></li>
             
+                <li data-name="SH.getBrowserLocation"><a href="SH.html#.getBrowserLocation">getBrowserLocation</a></li>
+            
                 <li data-name="SH.initialize"><a href="SH.html#.initialize">initialize</a></li>
             
                 <li data-name="SH.log"><a href="SH.html#.log">log</a></li>
@@ -352,6 +354,10 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="SH.User.PLATFORM_X"><a href="SH.User.html#.PLATFORM_X">PLATFORM_X</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -365,6 +371,10 @@
                 <li data-name="SH.User.createAnonymousUser"><a href="SH.User.html#.createAnonymousUser">createAnonymousUser</a></li>
             
                 <li data-name="SH.User.logIn"><a href="SH.User.html#.logIn">logIn</a></li>
+            
+                <li data-name="SH.User.logInWithAccessToken"><a href="SH.User.html#.logInWithAccessToken">logInWithAccessToken</a></li>
+            
+                <li data-name="SH.User.logInWithEmailAndMobile"><a href="SH.User.html#.logInWithEmailAndMobile">logInWithEmailAndMobile</a></li>
             
                 <li data-name="SH.User.logInWithMobilePhone"><a href="SH.User.html#.logInWithMobilePhone">logInWithMobilePhone</a></li>
             
@@ -466,7 +476,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2003
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2036
         </div> -->
         
     </div>
@@ -1181,6 +1191,129 @@
     
     
     
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".PLATFORM_X"><span class="type-signature static">static</span>SH.User.PLATFORM_X</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>SH.User.PLATFORM_X is the available platform for third party login.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>PLATFORM_ANONYMOUS</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>PLATFORM_FACEBOOK</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
     
     
         <h3 class="subsection-title">Methods</h3>
@@ -1196,7 +1329,7 @@
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2852
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2965
         </div> -->
         
     </div>
@@ -1383,7 +1516,7 @@ to disk, so you can retrieve the currently logged in user using
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2399
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2562
         </div> -->
         
     </div>
@@ -1512,7 +1645,7 @@ Can be integrated with REST API login <br></p>
          error: function(error) {
              //SH.showError(error);
          }
-});</p></code></pre>
+     });</p></code></pre>
     
 
     
@@ -1529,7 +1662,7 @@ Can be integrated with REST API login <br></p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2807
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2920
         </div> -->
         
     </div>
@@ -1688,6 +1821,402 @@ so you can retrieve the currently logged in user using
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id=".logInWithAccessToken">
+            
+            <span class="type-signature static">static</span>SH.User.logInWithAccessToken<span class="signature">(platform, data, <span class="optional">callback</span>)</span>
+        </h4>
+    
+        
+        <!-- <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2479
+        </div> -->
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Create a new anonymous user via REST API <br>
+Can be integrated with REST API login <br></p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>platform</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SH.User.html#.PLATFORM_X">SH.User.PLATFORM_X</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>Available platform for sign up.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>The response data returned from third party token.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>An object that has an optional success function, that takes no arguments and will be called on a successful puSH. and an error function that takes a AV.Error and will be called if the push failed.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a target="_blank" href="https://leancloud.cn/docs/js_guide.html#%E7%BB%91%E5%AE%9A%E7%AC%AC%E4%B8%89%E6%96%B9%E5%B9%B3%E5%8F%B0%E8%B4%A6%E6%88%B7">https://leancloud.cn/docs/js_guide.html#绑定第三方平台账户</a></li>
+        </ul>
+    </dd>
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>SH.User.logInWithAccessToken(platform, data, {
+         success: function(user) {
+             //Access user here
+         },
+         error: function(error) {
+             //SH.showError(error);
+         }
+     });</p></code></pre>
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".logInWithEmailAndMobile">
+            
+            <span class="type-signature static">static</span>SH.User.logInWithEmailAndMobile<span class="signature">(email, mobileNumber, <span class="optional">callback</span>)</span>
+        </h4>
+    
+        
+        <!-- <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2434
+        </div> -->
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>log in a user, with given email and mobileNumber</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>email</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>The give email</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>mobileNumber</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>The given mobileNumber</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>An object that has an optional success function, that takes no arguments and will be called on a successful push, and an error function that takes a AV.Error and will be called if the push failed.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code><p>SH.User.logInWithEmailAndMobile(&quot;shelf@sk8.asia&quot;, &quot;0498765432&quot;, {
+         success: function(user) {
+             //Updated user
+         },
+         error: function(error) {
+             //SH.showError(error);
+         }
+     });</p></code></pre>
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id=".logInWithMobilePhone">
             
             <span class="type-signature static">static</span>SH.User.logInWithMobilePhone<span class="signature">(mobilePhone, password, options)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{AV.Promise}</span>
@@ -1695,7 +2224,7 @@ so you can retrieve the currently logged in user using
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2612
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2725
         </div> -->
         
     </div>
@@ -1912,7 +2441,7 @@ user using <code>current</code>.</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2637
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2750
         </div> -->
         
     </div>
@@ -1993,7 +2522,7 @@ session from disk, log out of linked services, and future calls to
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2666
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2779
         </div> -->
         
     </div>
@@ -2150,7 +2679,7 @@ verify their email address on the AV site.</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2761
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2874
         </div> -->
         
     </div>
@@ -2307,7 +2836,7 @@ login by AV.User.logInWithMobilePhoneSmsCode function.</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2687
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2800
         </div> -->
         
     </div>
@@ -2450,7 +2979,7 @@ verify their mobile phone number by calling AV.User.verifyMobilePhone</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2645
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2758
         </div> -->
         
     </div>
@@ -2607,7 +3136,7 @@ reset their password on the AV site.</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2706
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2819
         </div> -->
         
     </div>
@@ -2764,7 +3293,7 @@ reset their account's password by calling AV.User.resetPasswordBySmsCode</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2726
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2839
         </div> -->
         
     </div>
@@ -2971,7 +3500,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2483
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2596
         </div> -->
         
     </div>
@@ -3116,7 +3645,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2547
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2660
         </div> -->
         
     </div>
@@ -3309,7 +3838,7 @@ also persist the session on disk so that you can access the user using
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2575
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2688
         </div> -->
         
     </div>
@@ -3516,7 +4045,7 @@ also persist the session on disk so that you can access the user using
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2744
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2857
         </div> -->
         
     </div>
@@ -3700,7 +4229,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2365
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2400
         </div> -->
         
     </div>
@@ -3816,7 +4345,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2508
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2621
         </div> -->
         
     </div>
@@ -3982,7 +4511,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2536
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2649
         </div> -->
         
     </div>
@@ -4061,7 +4590,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2541
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2654
         </div> -->
         
     </div>
@@ -4140,7 +4669,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2356
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2391
         </div> -->
         
     </div>
@@ -4248,7 +4777,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2304
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2339
         </div> -->
         
     </div>
@@ -4421,7 +4950,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2326
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2361
         </div> -->
         
     </div>
@@ -4529,7 +5058,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2335
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2370
         </div> -->
         
     </div>
@@ -4637,7 +5166,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2219
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2254
         </div> -->
         
     </div>
@@ -4826,7 +5355,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2245
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2280
         </div> -->
         
     </div>
@@ -4909,7 +5438,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2257
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2292
         </div> -->
         
     </div>
@@ -4992,7 +5521,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2212
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2247
         </div> -->
         
     </div>
@@ -5137,7 +5666,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2270
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2305
         </div> -->
         
     </div>
@@ -5338,7 +5867,7 @@ of the function.</td>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2782
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2895
         </div> -->
         
     </div>
@@ -5548,7 +6077,7 @@ user using <code>current</code>.</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2034
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2067
         </div> -->
         
     </div>
@@ -5680,7 +6209,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2373
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2408
         </div> -->
         
     </div>
@@ -5796,7 +6325,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2381
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2416
         </div> -->
         
     </div>
@@ -5962,7 +6491,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2522
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2635
         </div> -->
         
     </div>
@@ -6128,7 +6657,7 @@ Initialize a new instance of the Class</p>
     
         
         <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2344
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/ShelfSDK/docs/sources/js/shelf.js, line 2379
         </div> -->
         
     </div>
@@ -6252,7 +6781,7 @@ Initialize a new instance of the Class</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Fri Oct 23 2015 11:48:31 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Mon Nov 02 2015 12:53:15 GMT+1100 (AEDT)
         </footer>
     </div>
 </div>
