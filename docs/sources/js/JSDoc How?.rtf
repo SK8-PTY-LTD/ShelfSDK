@@ -1,6 +1,6 @@
-curl -L -o readme.md "https://raw.githubusercontent.com/jacktator/Shelf_Web/master/README.md?token=AFYnPI7zT_Vy8TD6hnzOGYx2IicEUelCks5WP_vswA%3D%3D"
-
 curl -L -o shelf.js "https://assets.shelf.is/shelf/lib/shelf-doc.js"
+
+curl -L -o readme.md "https://raw.githubusercontent.com/jacktator/Shelf_Web/master/README.md?token=AFYnPI7zT_Vy8TD6hnzOGYx2IicEUelCks5WP_vswA%3D%3D"
 
 jsdoc shelf.js readme.md -c conf.json -t bower_components/jaguarjs-jsdoc/ -d ../../js/
 
