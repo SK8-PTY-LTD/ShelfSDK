@@ -80,6 +80,8 @@
             
                 <li data-name="SH.showError"><a href="SH.html#.showError">showError</a></li>
             
+                <li data-name="SH.switchUser"><a href="SH.html#.switchUser">switchUser</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -238,13 +240,7 @@
             
                 <li data-name="SH.Purchase#new"><a href="SH.Purchase.html#new">new</a></li>
             
-                <li data-name="SH.Purchase#refreshDelivery"><a href="SH.Purchase.html#refreshDelivery">refreshDelivery</a></li>
-            
-                <li data-name="SH.Purchase#refreshDeliveryInCent"><a href="SH.Purchase.html#refreshDeliveryInCent">refreshDeliveryInCent</a></li>
-            
                 <li data-name="SH.Purchase#refreshPrice"><a href="SH.Purchase.html#refreshPrice">refreshPrice</a></li>
-            
-                <li data-name="SH.Purchase#refreshPriceInCent"><a href="SH.Purchase.html#refreshPriceInCent">refreshPriceInCent</a></li>
             
                 <li data-name="SH.Purchase#removeProduct"><a href="SH.Purchase.html#removeProduct">removeProduct</a></li>
             
@@ -394,7 +390,7 @@
             
                 <li data-name="SH.User.signUp"><a href="SH.User.html#.signUp">signUp</a></li>
             
-                <li data-name="SH.User.signUpOrlogInWithAccessToken"><a href="SH.User.html#.signUpOrlogInWithAccessToken">signUpOrlogInWithAccessToken</a></li>
+                <li data-name="SH.User.signUpOrloginWithAccessToken"><a href="SH.User.html#.signUpOrloginWithAccessToken">signUpOrloginWithAccessToken</a></li>
             
                 <li data-name="SH.User.signUpOrlogInWithMobilePhone"><a href="SH.User.html#.signUpOrlogInWithMobilePhone">signUpOrlogInWithMobilePhone</a></li>
             
@@ -475,9 +471,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3012
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3040
+        </div>
         
     </div>
 
@@ -588,9 +584,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3125
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3153
+        </div>
         
     </div>
 
@@ -659,9 +655,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 282
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 282
+        </div>
         
     </div>
 
@@ -814,9 +810,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3109
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3137
+        </div>
         
     </div>
 
@@ -826,8 +822,7 @@
     
     
     <div class="description">
-        <p>Get the geolocation from browser. <br>
-It is most recommended to ask user permission first before calling this functino</p>
+        <p>Get the geolocation from browser. <br><br>It is most recommended to ask user permission first before calling this functino</p>
     </div>
     
 
@@ -894,9 +889,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3022
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3050
+        </div>
         
     </div>
 
@@ -1025,17 +1020,7 @@ It is most recommended to ask user permission first before calling this functino
         
 
     
-    <pre class="prettyprint"><code><p>SH.initialize(&quot;abcdShopId&quot;, {
-         success: function(shop) {
-             //$rootScope.currentShop = SH.currentShop;
-             //$rootScope.currentSeller = SH.currentShop.owner;
-             //$rootScope.currentUser = SH.currentUser;
-             //$scope.reloadShop(shop);
-         },
-         error: function(error) {
-             SH.showError(error);
-         }
-});</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.initialize(&quot;abcdShopId&quot;, {<br>         success: function(shop) {<br>             //$rootScope.currentShop = SH.currentShop;<br>             //$rootScope.currentSeller = SH.currentShop.owner;<br>             //$rootScope.currentUser = SH.currentUser;<br>             //$scope.reloadShop(shop);<br>         },<br>         error: function(error) {<br>             SH.showError(error);<br>         }<br>});</p></code></pre>
     
 
     
@@ -1051,9 +1036,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3156
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3184
+        </div>
         
     </div>
 
@@ -1175,9 +1160,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3256
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3284
+        </div>
         
     </div>
 
@@ -1291,9 +1276,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3136
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3164
+        </div>
         
     </div>
 
@@ -1415,9 +1400,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3189
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3217
+        </div>
         
     </div>
 
@@ -1479,12 +1464,7 @@ It is most recommended to ask user permission first before calling this functino
                         
                     
                 
-                <p>The data of the email. Valid fields are: <br>
-    name - A String for the sender's name. <br>
-    email - A String for the sender's email address. <br>
-    receiver - A String for the receiver's email address. <br>
-    subject - A String for the subject of the email. <br>
-    message - A String for the message to be sent.</p></td>
+                <p>The data of the email. Valid fields are: <br><br>    name - A String for the sender's name. <br><br>    email - A String for the sender's email address. <br><br>    receiver - A String for the receiver's email address. <br><br>    subject - A String for the subject of the email. <br><br>    message - A String for the message to be sent.</p></td>
         </tr>
 	
 	
@@ -1577,20 +1557,7 @@ It is most recommended to ask user permission first before calling this functino
         
 
     
-    <pre class="prettyprint"><code><p>SH.sendEmail({
-         'name': &quot;Jack&quot;,
-         'email': &quot;jack@sk8.asia&quot;,
-         'receiver': &quot;feedback@sk8.asia&quot;,
-         'subject': &quot;Shelf Enquiry&quot;,
-         'message': &quot;Shelf is Awesome!&quot;
-     }, {
-         success: function(message) {
-             //Email sent successfully
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.sendEmail({<br>         'name': &quot;Jack&quot;,<br>         'email': &quot;jack@sk8.asia&quot;,<br>         'receiver': &quot;feedback@sk8.asia&quot;,<br>         'subject': &quot;Shelf Enquiry&quot;,<br>         'message': &quot;Shelf is Awesome!&quot;<br>     }, {<br>         success: function(message) {<br>             //Email sent successfully<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -1606,9 +1573,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3219
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3247
+        </div>
         
     </div>
 
@@ -1670,14 +1637,7 @@ It is most recommended to ask user permission first before calling this functino
                         
                     
                 
-                <p>The data of the push notification. Valid fields are: <br>
-    channels - An Array of channels to push to. <br>
-    push_time - A Date object for when to send the push. <br>
-    expiration_time - A Date object for when to expire the push. <br>
-    expiration_interval - The seconds from now to expire the push. <br>
-    where - A AV.Query over AV.Installation that is used to match a set of installations to push to. <br>
-    cql - A CQL statement over AV.Installation that is used to match a set of installations to push to. <br>
-    data - The data to send as part of the push</p></td>
+                <p>The data of the push notification. Valid fields are: <br><br>    channels - An Array of channels to push to. <br><br>    push_time - A Date object for when to send the push. <br><br>    expiration_time - A Date object for when to expire the push. <br><br>    expiration_interval - The seconds from now to expire the push. <br><br>    where - A AV.Query over AV.Installation that is used to match a set of installations to push to. <br><br>    cql - A CQL statement over AV.Installation that is used to match a set of installations to push to. <br><br>    data - The data to send as part of the push</p></td>
         </tr>
 	
 	
@@ -1770,17 +1730,7 @@ It is most recommended to ask user permission first before calling this functino
         
 
     
-    <pre class="prettyprint"><code><p>SH.sendPush({
-         // channels: ['aaa'],
-         data: {message: &quot;Shelf is Awesome!&quot;}
-     }, {
-         success: function(message) {
-             //Push sent successfully
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.sendPush({<br>         // channels: ['aaa'],<br>         data: {message: &quot;Shelf is Awesome!&quot;}<br>     }, {<br>         success: function(message) {<br>             //Push sent successfully<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -1796,9 +1746,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3165
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3193
+        </div>
         
     </div>
 
@@ -1860,9 +1810,7 @@ It is most recommended to ask user permission first before calling this functino
                         
                     
                 
-                <p>The data of the SMS. Valid fields are: <br>
-    receiver - A String for the receiver's phone address, including the country code. <br>
-    message - A String for the message to be sent.</p></td>
+                <p>The data of the SMS. Valid fields are: <br><br>    receiver - A String for the receiver's phone address, including the country code. <br><br>    message - A String for the message to be sent.</p></td>
         </tr>
 	
 	
@@ -1955,17 +1903,7 @@ It is most recommended to ask user permission first before calling this functino
         
 
     
-    <pre class="prettyprint"><code><p>SH.sendSMS({
-         message: &quot;Shelf is awesome!&quot;,
-         receiver: &quot;+61449843149&quot;
-     }, {
-         success: function(message) {
-             //SMS sent successfully
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.sendSMS({<br>         message: &quot;Shelf is awesome!&quot;,<br>         receiver: &quot;+61449843149&quot;<br>     }, {<br>         success: function(message) {<br>             //SMS sent successfully<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -1981,9 +1919,9 @@ It is most recommended to ask user permission first before calling this functino
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 3146
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3174
+        </div>
         
     </div>
 
@@ -2095,6 +2033,135 @@ It is most recommended to ask user permission first before calling this functino
     
 </dd>
 
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".switchUser">
+            
+            <span class="type-signature static">static</span>SH.switchUser<span class="signature">(addressPt, purchase)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3294
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Switch currentUser to a signed up or logged in user<br>by mike</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>addressPt</code></td>
+            
+            
+            <td class="type">
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>purchase</code></td>
+            
+            
+            <td class="type">
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
         </dl>
     
     
@@ -2112,7 +2179,7 @@ It is most recommended to ask user permission first before calling this functino
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Fri Nov 06 2015 00:34:35 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Apr 15 2016 02:13:27 GMT+1000 (AEST)
         </footer>
     </div>
 </div>

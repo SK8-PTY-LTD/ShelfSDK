@@ -80,6 +80,8 @@
             
                 <li data-name="SH.showError"><a href="SH.html#.showError">showError</a></li>
             
+                <li data-name="SH.switchUser"><a href="SH.html#.switchUser">switchUser</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -238,13 +240,7 @@
             
                 <li data-name="SH.Purchase#new"><a href="SH.Purchase.html#new">new</a></li>
             
-                <li data-name="SH.Purchase#refreshDelivery"><a href="SH.Purchase.html#refreshDelivery">refreshDelivery</a></li>
-            
-                <li data-name="SH.Purchase#refreshDeliveryInCent"><a href="SH.Purchase.html#refreshDeliveryInCent">refreshDeliveryInCent</a></li>
-            
                 <li data-name="SH.Purchase#refreshPrice"><a href="SH.Purchase.html#refreshPrice">refreshPrice</a></li>
-            
-                <li data-name="SH.Purchase#refreshPriceInCent"><a href="SH.Purchase.html#refreshPriceInCent">refreshPriceInCent</a></li>
             
                 <li data-name="SH.Purchase#removeProduct"><a href="SH.Purchase.html#removeProduct">removeProduct</a></li>
             
@@ -394,7 +390,7 @@
             
                 <li data-name="SH.User.signUp"><a href="SH.User.html#.signUp">signUp</a></li>
             
-                <li data-name="SH.User.signUpOrlogInWithAccessToken"><a href="SH.User.html#.signUpOrlogInWithAccessToken">signUpOrlogInWithAccessToken</a></li>
+                <li data-name="SH.User.signUpOrloginWithAccessToken"><a href="SH.User.html#.signUpOrloginWithAccessToken">signUpOrloginWithAccessToken</a></li>
             
                 <li data-name="SH.User.signUpOrlogInWithMobilePhone"><a href="SH.User.html#.signUpOrlogInWithMobilePhone">signUpOrlogInWithMobilePhone</a></li>
             
@@ -475,9 +471,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 952
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 940
+        </div>
         
     </div>
 
@@ -550,13 +546,13 @@
 	
         <tr>
             
-                <td class="name"><code>shop</code></td>
+                <td class="name"><code>charge</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type"><a href="SH.Shop.html">SH.Shop</a></span>
+<span class="param-type">Ojbect</span>
 
 
             
@@ -566,7 +562,7 @@
             
             
             
-            <td class="description last"><p>The shop of this Purchase</p></td>
+            <td class="description last"><p>The charge object used in Stripe</p></td>
         </tr>
 	
 	
@@ -590,6 +586,52 @@
             
             
             <td class="description last"><p>The comment buyer left for seller</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>couponPriceInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The fixed coupon applied of this Purchase, in cent</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>couponPrice</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The fixed coupon applied of this Purchase, in dollar</p></td>
         </tr>
 	
 	
@@ -635,7 +677,7 @@
             
             
             
-            <td class="description last"><p>The deliveryAddress of this Purchase</p></td>
+            <td class="description last"><p>The delivery delivery address of this Purchase</p></td>
         </tr>
 	
 	
@@ -665,6 +707,121 @@
 	
         <tr>
             
+                <td class="name"><code>deliveryPrice</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The delivery price of this Purchase, in dollar</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>discountPriceInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The percentage discount applied of this Purchase, in cent</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>discountPrice</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The percentage discount applied of this Purchase, in dollar</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>gstInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The gst of this Purchase, in cent</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>gst</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The gst of this Purchase, in dollar</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
                 <td class="name"><code>priceInCent</code></td>
             
             
@@ -682,6 +839,52 @@
             
             
             <td class="description last"><p>The subtotal price of this Purchase</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>price</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The price of this Purchase, in dollar</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>shop</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SH.Shop.html">SH.Shop</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The shop of this Purchase</p></td>
         </tr>
 	
 	
@@ -734,13 +937,13 @@
 	
         <tr>
             
-                <td class="name"><code>charge</code></td>
+                <td class="name"><code>totalPriceInCent</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">Ojbect</span>
+<span class="param-type">Int</span>
 
 
             
@@ -750,7 +953,30 @@
             
             
             
-            <td class="description last"><p>The charge object used in Stripe</p></td>
+            <td class="description last"><p>The total price of this Purchase, in cent</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>totalPrice</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The total price of this Purchase, in dollar</p></td>
         </tr>
 	
 	
@@ -1039,9 +1265,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 998
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 998
+        </div>
         
     </div>
 
@@ -1209,9 +1435,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1064
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1071
+        </div>
         
     </div>
 
@@ -1288,9 +1514,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1093
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1104
+        </div>
         
     </div>
 
@@ -1388,9 +1614,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 974
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 972
+        </div>
         
     </div>
 
@@ -1400,8 +1626,7 @@
     
     
     <div class="description">
-        <p>Recommended way to
-Initialize a new instance of the Class</p>
+        <p>Recommended way to<br>Initialize a new instance of the Class</p>
     </div>
     
 
@@ -1514,215 +1739,15 @@ Initialize a new instance of the Class</p>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="refreshDelivery">
-            
-            refreshDelivery<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Int}</span>
-        </h4>
-    
-        
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1165
-        </div> -->
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Refresh the <strong>delivery</strong> price, in <strong>DOLLAR</strong>, for all purchase entries in this purchase</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        Int
-                        
-                    
-            </td>
-            <td class="description last">deliveryPriceInDollar The delivery price in dollar.</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="refreshDeliveryInCent">
-            
-            refreshDeliveryInCent<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Int}</span>
-        </h4>
-    
-        
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1144
-        </div> -->
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Refresh the <strong>delivery</strong> price, in <strong>CENT</strong>, for all purchase entries in this purchase</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        Int
-                        
-                    
-            </td>
-            <td class="description last">deliveryPriceInCent The delivery price in cent.</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="refreshPrice">
             
-            refreshPrice<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Int}</span>
+            refreshPrice<span class="signature">(discountRate, coupon, deliveryPriceInCent)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Float}</span>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1133
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1170
+        </div>
         
     </div>
 
@@ -1741,105 +1766,96 @@ Initialize a new instance of the Class</p>
     
     
     
-    
-    
-<dl class="details">
-    
         
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
 
 <table class="params">
     <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
         <tr>
+            
+                <td class="name"><code>discountRate</code></td>
+            
             
             <td class="type">
             
-                        Int
-                        
-                    
+                
+<span class="param-type">Float</span>
+
+
+            
             </td>
-            <td class="description last">price The price in dollar, <strong>excluding</strong> delivery price.</td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the discount rate</p></td>
         </tr>
-    
-    </tbody>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>coupon</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the amount will be substracted from the  total price.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>deliveryPriceInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the amount will be added to the  total price.</p></td>
+        </tr>
+	
+	
+	</tbody>
 </table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="refreshPriceInCent">
-            
-            refreshPriceInCent<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Int}</span>
-        </h4>
-    
-        
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1106
-        </div> -->
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Refresh the price, in <strong>CENT</strong>, for all purchase entries in this purchase</p>
-    </div>
-    
-
-    
-    
-    
-    
     
     
     
@@ -1895,11 +1911,11 @@ Initialize a new instance of the Class</p>
             
             <td class="type">
             
-                        Int
+                        Float
                         
                     
             </td>
-            <td class="description last">priceInCent The price in cent, <strong>excluding</strong> delivery price</td>
+            <td class="description last">price The price in dollar, <strong>including</strong> delivery price if provided.</td>
         </tr>
     
     </tbody>
@@ -1920,9 +1936,9 @@ Initialize a new instance of the Class</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1038
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1044
+        </div>
         
     </div>
 
@@ -2044,9 +2060,9 @@ Initialize a new instance of the Class</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1073
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1080
+        </div>
         
     </div>
 
@@ -2151,7 +2167,7 @@ Initialize a new instance of the Class</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Fri Nov 06 2015 00:34:35 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Apr 15 2016 02:13:27 GMT+1000 (AEST)
         </footer>
     </div>
 </div>

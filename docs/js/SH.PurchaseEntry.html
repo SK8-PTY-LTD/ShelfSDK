@@ -80,6 +80,8 @@
             
                 <li data-name="SH.showError"><a href="SH.html#.showError">showError</a></li>
             
+                <li data-name="SH.switchUser"><a href="SH.html#.switchUser">switchUser</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -238,13 +240,7 @@
             
                 <li data-name="SH.Purchase#new"><a href="SH.Purchase.html#new">new</a></li>
             
-                <li data-name="SH.Purchase#refreshDelivery"><a href="SH.Purchase.html#refreshDelivery">refreshDelivery</a></li>
-            
-                <li data-name="SH.Purchase#refreshDeliveryInCent"><a href="SH.Purchase.html#refreshDeliveryInCent">refreshDeliveryInCent</a></li>
-            
                 <li data-name="SH.Purchase#refreshPrice"><a href="SH.Purchase.html#refreshPrice">refreshPrice</a></li>
-            
-                <li data-name="SH.Purchase#refreshPriceInCent"><a href="SH.Purchase.html#refreshPriceInCent">refreshPriceInCent</a></li>
             
                 <li data-name="SH.Purchase#removeProduct"><a href="SH.Purchase.html#removeProduct">removeProduct</a></li>
             
@@ -394,7 +390,7 @@
             
                 <li data-name="SH.User.signUp"><a href="SH.User.html#.signUp">signUp</a></li>
             
-                <li data-name="SH.User.signUpOrlogInWithAccessToken"><a href="SH.User.html#.signUpOrlogInWithAccessToken">signUpOrlogInWithAccessToken</a></li>
+                <li data-name="SH.User.signUpOrloginWithAccessToken"><a href="SH.User.html#.signUpOrloginWithAccessToken">signUpOrloginWithAccessToken</a></li>
             
                 <li data-name="SH.User.signUpOrlogInWithMobilePhone"><a href="SH.User.html#.signUpOrlogInWithMobilePhone">signUpOrlogInWithMobilePhone</a></li>
             
@@ -475,9 +471,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1289
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1363
+        </div>
         
     </div>
 
@@ -573,29 +569,6 @@
 	
         <tr>
             
-                <td class="name"><code>summary</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Summary of this purchase entry</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
                 <td class="name"><code>deliveryAddress</code></td>
             
             
@@ -613,6 +586,52 @@
             
             
             <td class="description last"><p>The deliveryAddress of this PurchaseEntry</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>gstInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>GST for this entry, in cent. Australia 10% GST is applied. No other country is currently supported.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>gst</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>GST for this entry, in dollar. Australia 10% GST is applied. No other country is currently supported.</p></td>
         </tr>
 	
 	
@@ -843,6 +862,75 @@
             
             
             <td class="description last"><p>Status of this PurchaseEntry</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>totalPriceInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Historical total of this entry at purchase, in cent</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>totalPrice</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Historical total of this entry at purchase, in dollar</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>summary</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Summary of this purchase entry</p></td>
         </tr>
 	
 	
@@ -1129,9 +1217,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1314
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1392
+        </div>
         
     </div>
 
@@ -1141,8 +1229,7 @@
     
     
     <div class="description">
-        <p>Recommended way to
-Initialize a new instance of the Class</p>
+        <p>Recommended way to<br>Initialize a new instance of the Class</p>
     </div>
     
 
@@ -1268,7 +1355,7 @@ Initialize a new instance of the Class</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Fri Nov 06 2015 00:34:35 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Apr 15 2016 02:13:27 GMT+1000 (AEST)
         </footer>
     </div>
 </div>

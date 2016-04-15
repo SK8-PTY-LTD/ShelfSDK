@@ -80,6 +80,8 @@
             
                 <li data-name="SH.showError"><a href="SH.html#.showError">showError</a></li>
             
+                <li data-name="SH.switchUser"><a href="SH.html#.switchUser">switchUser</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -238,13 +240,7 @@
             
                 <li data-name="SH.Purchase#new"><a href="SH.Purchase.html#new">new</a></li>
             
-                <li data-name="SH.Purchase#refreshDelivery"><a href="SH.Purchase.html#refreshDelivery">refreshDelivery</a></li>
-            
-                <li data-name="SH.Purchase#refreshDeliveryInCent"><a href="SH.Purchase.html#refreshDeliveryInCent">refreshDeliveryInCent</a></li>
-            
                 <li data-name="SH.Purchase#refreshPrice"><a href="SH.Purchase.html#refreshPrice">refreshPrice</a></li>
-            
-                <li data-name="SH.Purchase#refreshPriceInCent"><a href="SH.Purchase.html#refreshPriceInCent">refreshPriceInCent</a></li>
             
                 <li data-name="SH.Purchase#removeProduct"><a href="SH.Purchase.html#removeProduct">removeProduct</a></li>
             
@@ -394,7 +390,7 @@
             
                 <li data-name="SH.User.signUp"><a href="SH.User.html#.signUp">signUp</a></li>
             
-                <li data-name="SH.User.signUpOrlogInWithAccessToken"><a href="SH.User.html#.signUpOrlogInWithAccessToken">signUpOrlogInWithAccessToken</a></li>
+                <li data-name="SH.User.signUpOrloginWithAccessToken"><a href="SH.User.html#.signUpOrloginWithAccessToken">signUpOrloginWithAccessToken</a></li>
             
                 <li data-name="SH.User.signUpOrlogInWithMobilePhone"><a href="SH.User.html#.signUpOrlogInWithMobilePhone">signUpOrlogInWithMobilePhone</a></li>
             
@@ -475,9 +471,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2051
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2078
+        </div>
         
     </div>
 
@@ -1328,9 +1324,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2986
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 3014
+        </div>
         
     </div>
 
@@ -1340,9 +1336,7 @@
     
     
     <div class="description">
-        <p>Logs in a user with a session token. On success, this saves the session
-to disk, so you can retrieve the currently logged in user using
-<code>current</code>.</p>
+        <p>Logs in a user with a session token. On success, this saves the session<br>to disk, so you can retrieve the currently logged in user using<br><code>current</code>.</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -1478,8 +1472,7 @@ to disk, so you can retrieve the currently logged in user using
                         
                     
             </td>
-            <td class="description last">A promise that is fulfilled with the user when
-    the login completes.</td>
+            <td class="description last">A promise that is fulfilled with the user when<br>    the login completes.</td>
         </tr>
     
     </tbody>
@@ -1492,14 +1485,7 @@ to disk, so you can retrieve the currently logged in user using
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.become(&quot;sessionToken&quot;, {
-       success: function(){
-         //更新成功
-       },
-       error: function(user, err){
-         //SH.showError(error);
-       }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.become(&quot;sessionToken&quot;, {<br>       success: function(){<br>         //更新成功<br>       },<br>       error: function(user, err){<br>         //SH.showError(error);<br>       }<br>     });</p></code></pre>
     
 
     
@@ -1515,9 +1501,9 @@ to disk, so you can retrieve the currently logged in user using
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2583
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2611
+        </div>
         
     </div>
 
@@ -1527,8 +1513,7 @@ to disk, so you can retrieve the currently logged in user using
     
     
     <div class="description">
-        <p>Create a new anonymous user via REST API <br>
-Can be integrated with REST API login <br></p>
+        <p>Create a new anonymous user via REST API <br><br>Can be integrated with REST API login <br></p>
     </div>
     
 
@@ -1638,14 +1623,7 @@ Can be integrated with REST API login <br></p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.createAnonymousUser({
-         success: function(user) {
-             //Access user here
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.createAnonymousUser({<br>         success: function(user) {<br>             //Access user here<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -1661,9 +1639,9 @@ Can be integrated with REST API login <br></p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2941
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2969
+        </div>
         
     </div>
 
@@ -1673,9 +1651,7 @@ Can be integrated with REST API login <br></p>
     
     
     <div class="description">
-        <p>Logs in a AV.User. On success, this saves the session to localStorage,
-so you can retrieve the currently logged in user using
-<code>current</code>.</p>
+        <p>Logs in a AV.User. On success, this saves the session to localStorage,<br>so you can retrieve the currently logged in user using<br><code>current</code>.</p>
 <p>A username and password must be set before calling logIn.</p>
 
 <p>Calls options.success or options.error on completion.</p>
@@ -1790,8 +1766,7 @@ so you can retrieve the currently logged in user using
                         
                     
             </td>
-            <td class="description last">A promise that is fulfilled with the user when
-    the login is complete.</td>
+            <td class="description last">A promise that is fulfilled with the user when<br>    the login is complete.</td>
         </tr>
     
     </tbody>
@@ -1804,14 +1779,7 @@ so you can retrieve the currently logged in user using
         
 
     
-    <pre class="prettyprint"><code><p>AV.User.logIn(&quot;myUsername&quot;, &quot;myPassword&quot;, {
-       success: function(user) {
-         // 成功了，现在可以做其他事情了.
-       },
-       error: function(user, error) {
-         //SH.showError(error);
-       }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>AV.User.logIn(&quot;myUsername&quot;, &quot;myPassword&quot;, {<br>       success: function(user) {<br>         // 成功了，现在可以做其他事情了.<br>       },<br>       error: function(user, error) {<br>         //SH.showError(error);<br>       }<br>     });</p></code></pre>
     
 
     
@@ -1827,9 +1795,9 @@ so you can retrieve the currently logged in user using
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2455
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2482
+        </div>
         
     </div>
 
@@ -1998,14 +1966,7 @@ so you can retrieve the currently logged in user using
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.logInWithEmailAndMobile(&quot;shelf@sk8.asia&quot;, &quot;0498765432&quot;, {
-         success: function(user) {
-             //Updated user
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.logInWithEmailAndMobile(&quot;shelf@sk8.asia&quot;, &quot;0498765432&quot;, {<br>         success: function(user) {<br>             //Updated user<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -2021,9 +1982,9 @@ so you can retrieve the currently logged in user using
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2746
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2774
+        </div>
         
     </div>
 
@@ -2033,9 +1994,7 @@ so you can retrieve the currently logged in user using
     
     
     <div class="description">
-        <p>Logs in a user with a mobile phone number and password. On success, this
-saves the session to disk, so you can retrieve the currently logged in
-user using <code>current</code>.</p>
+        <p>Logs in a user with a mobile phone number and password. On success, this<br>saves the session to disk, so you can retrieve the currently logged in<br>user using <code>current</code>.</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -2201,8 +2160,7 @@ user using <code>current</code>.</p>
                         
                     
             </td>
-            <td class="description last">A promise that is fulfilled with the user when
-    the login completes.</td>
+            <td class="description last">A promise that is fulfilled with the user when<br>    the login completes.</td>
         </tr>
     
     </tbody>
@@ -2215,14 +2173,7 @@ user using <code>current</code>.</p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.logInWithMobilePhone('186xxxxxxxx', password, {
-       success: function(user) {
-         // 注册成功，可以使用了.
-       },
-       error: function(user, error) {
-         //SH.showError(error);
-       }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.logInWithMobilePhone('186xxxxxxxx', password, {<br>       success: function(user) {<br>         // 注册成功，可以使用了.<br>       },<br>       error: function(user, error) {<br>         //SH.showError(error);<br>       }<br>     });</p></code></pre>
     
 
     
@@ -2238,9 +2189,9 @@ user using <code>current</code>.</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2771
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2799
+        </div>
         
     </div>
 
@@ -2250,9 +2201,7 @@ user using <code>current</code>.</p>
     
     
     <div class="description">
-        <p>Logs out the currently logged in user session. This will remove the
-session from disk, log out of linked services, and future calls to
-<code>current</code> will return <code>null</code>.</p>
+        <p>Logs out the currently logged in user session. This will remove the<br>session from disk, log out of linked services, and future calls to<br><code>current</code> will return <code>null</code>.</p>
     </div>
     
 
@@ -2319,9 +2268,9 @@ session from disk, log out of linked services, and future calls to
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2800
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2828
+        </div>
         
     </div>
 
@@ -2331,9 +2280,7 @@ session from disk, log out of linked services, and future calls to
     
     
     <div class="description">
-        <p>Requests a verify email to be sent to the specified email address
-associated with the user account. This email allows the user to securely
-verify their email address on the AV site.</p>
+        <p>Requests a verify email to be sent to the specified email address<br>associated with the user account. This email allows the user to securely<br>verify their email address on the AV site.</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -2381,8 +2328,7 @@ verify their email address on the AV site.</p>
             
             <td class="description last">
                 
-                <p>The email address associated with the user that
-    doesn't verify their email address.</p></td>
+                <p>The email address associated with the user that<br>    doesn't verify their email address.</p></td>
         </tr>
 	
 	
@@ -2454,13 +2400,7 @@ verify their email address on the AV site.</p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.requestEmailVerify(&quot;email@example.com&quot;, {
-       success: function() {
-         // Verification email was sent successfully
-       },
-       error: function(error) {
-         //SH.showError(error);
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.requestEmailVerify(&quot;email@example.com&quot;, {<br>       success: function() {<br>         // Verification email was sent successfully<br>       },<br>       error: function(error) {<br>         //SH.showError(error);<br>     });</p></code></pre>
     
 
     
@@ -2476,9 +2416,9 @@ verify their email address on the AV site.</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2895
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2923
+        </div>
         
     </div>
 
@@ -2488,9 +2428,7 @@ verify their email address on the AV site.</p>
     
     
     <div class="description">
-        <p>Requests a logIn sms code to be sent to the specified mobile phone
-number associated with the user account. This sms code allows the user to
-login by AV.User.logInWithMobilePhoneSmsCode function.</p>
+        <p>Requests a logIn sms code to be sent to the specified mobile phone<br>number associated with the user account. This sms code allows the user to<br>login by AV.User.logInWithMobilePhoneSmsCode function.</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -2538,8 +2476,7 @@ login by AV.User.logInWithMobilePhoneSmsCode function.</p>
             
             <td class="description last">
                 
-                <p>The mobile phone number  associated with the
-          user that want to login by AV.User.logInWithMobilePhoneSmsCode</p></td>
+                <p>The mobile phone number  associated with the<br>          user that want to login by AV.User.logInWithMobilePhoneSmsCode</p></td>
         </tr>
 	
 	
@@ -2611,13 +2548,7 @@ login by AV.User.logInWithMobilePhoneSmsCode function.</p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.requestLoginSmsCode('186xxxxxxxx', {
-       success: function() {
-         // Password reset request was sent successfully
-       },
-       error: function(error) {
-         //SH.showError(error);
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.requestLoginSmsCode('186xxxxxxxx', {<br>       success: function() {<br>         // Password reset request was sent successfully<br>       },<br>       error: function(error) {<br>         //SH.showError(error);<br>     });</p></code></pre>
     
 
     
@@ -2633,9 +2564,9 @@ login by AV.User.logInWithMobilePhoneSmsCode function.</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2821
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2849
+        </div>
         
     </div>
 
@@ -2645,9 +2576,7 @@ login by AV.User.logInWithMobilePhoneSmsCode function.</p>
     
     
     <div class="description">
-        <p>Requests a verify sms code to be sent to the specified mobile phone
-number associated with the user account. This sms code allows the user to
-verify their mobile phone number by calling AV.User.verifyMobilePhone</p>
+        <p>Requests a verify sms code to be sent to the specified mobile phone<br>number associated with the user account. This sms code allows the user to<br>verify their mobile phone number by calling AV.User.verifyMobilePhone</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -2695,8 +2624,7 @@ verify their mobile phone number by calling AV.User.verifyMobilePhone</p>
             
             <td class="description last">
                 
-                <p>The mobile phone number  associated with the
-                 user that doesn't verify their mobile phone number.</p></td>
+                <p>The mobile phone number  associated with the<br>                 user that doesn't verify their mobile phone number.</p></td>
         </tr>
 	
 	
@@ -2776,9 +2704,9 @@ verify their mobile phone number by calling AV.User.verifyMobilePhone</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2779
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2807
+        </div>
         
     </div>
 
@@ -2788,9 +2716,7 @@ verify their mobile phone number by calling AV.User.verifyMobilePhone</p>
     
     
     <div class="description">
-        <p>Requests a password reset email to be sent to the specified email address
-associated with the user account. This email allows the user to securely
-reset their password on the AV site.</p>
+        <p>Requests a password reset email to be sent to the specified email address<br>associated with the user account. This email allows the user to securely<br>reset their password on the AV site.</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -2838,8 +2764,7 @@ reset their password on the AV site.</p>
             
             <td class="description last">
                 
-                <p>The email address associated with the user that
-    forgot their password.</p></td>
+                <p>The email address associated with the user that<br>    forgot their password.</p></td>
         </tr>
 	
 	
@@ -2911,13 +2836,7 @@ reset their password on the AV site.</p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.requestPasswordReset(&quot;email@example.com&quot;, {
-       success: function() {
-         // Password reset request was sent successfully
-       },
-       error: function(error) {
-         //SH.showError(error);
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.requestPasswordReset(&quot;email@example.com&quot;, {<br>       success: function() {<br>         // Password reset request was sent successfully<br>       },<br>       error: function(error) {<br>         //SH.showError(error);<br>     });</p></code></pre>
     
 
     
@@ -2933,9 +2852,9 @@ reset their password on the AV site.</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2840
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2868
+        </div>
         
     </div>
 
@@ -2945,9 +2864,7 @@ reset their password on the AV site.</p>
     
     
     <div class="description">
-        <p>Requests a reset password sms code to be sent to the specified mobile phone
-number associated with the user account. This sms code allows the user to
-reset their account's password by calling AV.User.resetPasswordBySmsCode</p>
+        <p>Requests a reset password sms code to be sent to the specified mobile phone<br>number associated with the user account. This sms code allows the user to<br>reset their account's password by calling AV.User.resetPasswordBySmsCode</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -2995,8 +2912,7 @@ reset their account's password by calling AV.User.resetPasswordBySmsCode</p>
             
             <td class="description last">
                 
-                <p>The mobile phone number  associated with the
-                 user that doesn't verify their mobile phone number.</p></td>
+                <p>The mobile phone number  associated with the<br>                 user that doesn't verify their mobile phone number.</p></td>
         </tr>
 	
 	
@@ -3068,13 +2984,7 @@ reset their account's password by calling AV.User.resetPasswordBySmsCode</p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.requestPasswordResetBySmsCode(&quot;186xxxxxxxx&quot;, {
-       success: function() {
-         // Password reset request was sent successfully
-       },
-       error: function(error) {
-         //SH.showError(error);
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.requestPasswordResetBySmsCode(&quot;186xxxxxxxx&quot;, {<br>       success: function() {<br>         // Password reset request was sent successfully<br>       },<br>       error: function(error) {<br>         //SH.showError(error);<br>     });</p></code></pre>
     
 
     
@@ -3090,9 +3000,9 @@ reset their account's password by calling AV.User.resetPasswordBySmsCode</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2860
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2888
+        </div>
         
     </div>
 
@@ -3102,8 +3012,7 @@ reset their account's password by calling AV.User.resetPasswordBySmsCode</p>
     
     
     <div class="description">
-        <p>Makes a call to reset user's account password by sms code and new password.
-The sms code is sent by AV.User.requestPasswordResetBySmsCode.</p>
+        <p>Makes a call to reset user's account password by sms code and new password.<br>The sms code is sent by AV.User.requestPasswordResetBySmsCode.</p>
     </div>
     
 
@@ -3261,8 +3170,7 @@ The sms code is sent by AV.User.requestPasswordResetBySmsCode.</p>
                         
                     
             </td>
-            <td class="description last">A promise that will be resolved with the result
-of the function.</td>
+            <td class="description last">A promise that will be resolved with the result<br>of the function.</td>
         </tr>
     
     </tbody>
@@ -3275,13 +3183,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.requestPasswordResetBySmsCode(&quot;123456&quot;, &quot;newPassword&quot;, {
-       success: function() {
-         // Password reset request was sent successfully
-       },
-       error: function(error) {
-         //SH.showError(error);
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.requestPasswordResetBySmsCode(&quot;123456&quot;, &quot;newPassword&quot;, {<br>       success: function() {<br>         // Password reset request was sent successfully<br>       },<br>       error: function(error) {<br>         //SH.showError(error);<br>     });</p></code></pre>
     
 
     
@@ -3297,9 +3199,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2617
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2645
+        </div>
         
     </div>
 
@@ -3419,14 +3321,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.signOut({
-         success: function(user) {
-             //User logged out, return with the new anonymous user
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.signOut({<br>         success: function(user) {<br>             //User logged out, return with the new anonymous user<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -3442,9 +3337,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2681
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2709
+        </div>
         
     </div>
 
@@ -3454,10 +3349,7 @@ of the function.</td>
     
     
     <div class="description">
-        <p>Signs up a new user. You should call this instead of save for
-new SH.Users. This will create a new SH.User on the server, and
-also persist the session on disk so that you can access the user using
-<code>current</code>.</p>
+        <p>Signs up a new user. You should call this instead of save for<br>new SH.Users. This will create a new SH.User on the server, and<br>also persist the session on disk so that you can access the user using<br><code>current</code>.</p>
 <p>A username and password must be set before calling signUp.</p>
 
 <p>Calls options.success or options.error on completion.</p>
@@ -3595,8 +3487,7 @@ also persist the session on disk so that you can access the user using
                         
                     
             </td>
-            <td class="description last">A promise that is fulfilled when the signup
-    finishes.</td>
+            <td class="description last">A promise that is fulfilled when the signup<br>    finishes.</td>
         </tr>
     
     </tbody>
@@ -3609,17 +3500,7 @@ also persist the session on disk so that you can access the user using
         
 
     
-    <pre class="prettyprint"><code><p>var user = SH.User.new();
-     user.username = &quot;133342301@163.com&quot;;
-     user.password = &quot;abcdefg&quot;;
-     user.signUp(null, {
-       success: function(user) {
-         // 注册成功，可以使用了.
-       },
-       error: function(user, error) {
-         //SH.showError(error);
-       }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>var user = SH.User.new();<br>     user.username = &quot;133342301@163.com&quot;;<br>     user.password = &quot;abcdefg&quot;;<br>     user.signUp(null, {<br>       success: function(user) {<br>         // 注册成功，可以使用了.<br>       },<br>       error: function(user, error) {<br>         //SH.showError(error);<br>       }<br>     });</p></code></pre>
     
 
     
@@ -3629,15 +3510,15 @@ also persist the session on disk so that you can access the user using
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".signUpOrlogInWithAccessToken">
+        <h4 class="name" id=".signUpOrloginWithAccessToken">
             
-            <span class="type-signature static">static</span>SH.User.signUpOrlogInWithAccessToken<span class="signature">(platform, data, <span class="optional">callback</span>)</span>
+            <span class="type-signature static">static</span>SH.User.signUpOrloginWithAccessToken<span class="signature">(platform, data, <span class="optional">callback</span>)</span>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2500
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2528
+        </div>
         
     </div>
 
@@ -3647,8 +3528,7 @@ also persist the session on disk so that you can access the user using
     
     
     <div class="description">
-        <p>Create a new anonymous user via REST API <br>
-Can be integrated with REST API login <br></p>
+        <p>Create a new anonymous user via REST API <br><br>Can be integrated with REST API login <br></p>
     </div>
     
 
@@ -3814,14 +3694,7 @@ Can be integrated with REST API login <br></p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.signUpOrlogInWithAccessToken(platform, data, {
-         success: function(user) {
-             //Access user here
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.signUpOrloginWithAccessToken(platform, data, {<br>         success: function(user) {<br>             //Access user here<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -3837,9 +3710,9 @@ Can be integrated with REST API login <br></p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2709
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2737
+        </div>
         
     </div>
 
@@ -3849,11 +3722,7 @@ Can be integrated with REST API login <br></p>
     
     
     <div class="description">
-        <p>Signs up a new user with mobile phone and sms code.
-You should call this instead of save for
-new AV.Users. This will create a new AV.User on the server, and
-also persist the session on disk so that you can access the user using
-<code>current</code>.</p>
+        <p>Signs up a new user with mobile phone and sms code.<br>You should call this instead of save for<br>new AV.Users. This will create a new AV.User on the server, and<br>also persist the session on disk so that you can access the user using<br><code>current</code>.</p>
 <p>A username and password must be set before calling signUp.</p>
 
 <p>Calls options.success or options.error on completion.</p>
@@ -3998,8 +3867,7 @@ also persist the session on disk so that you can access the user using
                         
                     
             </td>
-            <td class="description last">A promise that is fulfilled when the signup
-    finishes.</td>
+            <td class="description last">A promise that is fulfilled when the signup<br>    finishes.</td>
         </tr>
     
     </tbody>
@@ -4012,23 +3880,7 @@ also persist the session on disk so that you can access the user using
         
 
     
-    <pre class="prettyprint"><code><p>var user = SH.User.new();
-     user.username = &quot;133342301@163.com&quot;;
-     user.password = &quot;abcdefg&quot;;
-     user.signUpOrlogInWithMobilePhone({
-       mobilePhoneNumber: '186xxxxxxxx',
-       smsCode: '手机收到的 6 位验证码字符串',
-       username: &quot;feedback@sk8.asia&quot;,
-       passwrod: &quot;12345678&quot;
-       otherProperty: otherValue
-     }, {
-       success: function(user) {
-         // 注册成功，可以使用了.
-       },
-       error: function(user, error) {
-         //SH.showError(error);
-       }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>var user = SH.User.new();<br>     user.username = &quot;133342301@163.com&quot;;<br>     user.password = &quot;abcdefg&quot;;<br>     user.signUpOrlogInWithMobilePhone({<br>       mobilePhoneNumber: '186xxxxxxxx',<br>       smsCode: '手机收到的 6 位验证码字符串',<br>       username: &quot;feedback@sk8.asia&quot;,<br>       passwrod: &quot;12345678&quot;<br>       otherProperty: otherValue<br>     }, {<br>       success: function(user) {<br>         // 注册成功，可以使用了.<br>       },<br>       error: function(user, error) {<br>         //SH.showError(error);<br>       }<br>     });</p></code></pre>
     
 
     
@@ -4044,9 +3896,9 @@ also persist the session on disk so that you can access the user using
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2878
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2906
+        </div>
         
     </div>
 
@@ -4056,8 +3908,7 @@ also persist the session on disk so that you can access the user using
     
     
     <div class="description">
-        <p>Makes a call to verify sms code that sent by AV.User.Cloud.requestSmsCode
-If verify successfully,the user mobilePhoneVerified attribute will be true.</p>
+        <p>Makes a call to verify sms code that sent by AV.User.Cloud.requestSmsCode<br>If verify successfully,the user mobilePhoneVerified attribute will be true.</p>
     </div>
     
 
@@ -4192,8 +4043,7 @@ If verify successfully,the user mobilePhoneVerified attribute will be true.</p>
                         
                     
             </td>
-            <td class="description last">A promise that will be resolved with the result
-of the function.</td>
+            <td class="description last">A promise that will be resolved with the result<br>of the function.</td>
         </tr>
     
     </tbody>
@@ -4206,13 +4056,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.verifyMobilePhone(&quot;123456&quot;, {
-       success: function() {
-         // Password reset request was sent successfully
-       },
-       error: function(error) {
-         //SH.showError(error);
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.verifyMobilePhone(&quot;123456&quot;, {<br>       success: function() {<br>         // Password reset request was sent successfully<br>       },<br>       error: function(error) {<br>         //SH.showError(error);<br>     });</p></code></pre>
     
 
     
@@ -4228,9 +4072,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2421
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2448
+        </div>
         
     </div>
 
@@ -4344,9 +4188,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2642
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2670
+        </div>
         
     </div>
 
@@ -4487,14 +4331,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>user.follow(user, {
-         success: function(user) {
-             //Updated user
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>user.follow(user, {<br>         success: function(user) {<br>             //Updated user<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -4510,9 +4347,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2670
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2698
+        </div>
         
     </div>
 
@@ -4589,9 +4426,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2675
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2703
+        </div>
         
     </div>
 
@@ -4668,9 +4505,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2412
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2439
+        </div>
         
     </div>
 
@@ -4776,9 +4613,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2360
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2387
+        </div>
         
     </div>
 
@@ -4926,14 +4763,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>user.getMembership(shop, {
-         success: function(membership) {
-             //Membership downloaded successfully
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     })</p></code></pre>
+    <pre class="prettyprint"><code><p>user.getMembership(shop, {<br>         success: function(membership) {<br>             //Membership downloaded successfully<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     })</p></code></pre>
     
 
     
@@ -4949,9 +4779,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2382
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2409
+        </div>
         
     </div>
 
@@ -5057,9 +4887,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2391
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2418
+        </div>
         
     </div>
 
@@ -5165,9 +4995,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2275
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2302
+        </div>
         
     </div>
 
@@ -5332,13 +5162,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>user.hasLikedProduct(product, function(liked) {
-     if (liked) {
-         //User had liked the product
-     } else {
-         User had not liked the product
-     }
-});</p></code></pre>
+    <pre class="prettyprint"><code><p>user.hasLikedProduct(product, function(liked) {<br>     if (liked) {<br>         //User had liked the product<br>     } else {<br>         User had not liked the product<br>     }<br>});</p></code></pre>
     
 
     
@@ -5354,9 +5178,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2301
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2328
+        </div>
         
     </div>
 
@@ -5417,11 +5241,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>if (user.hasVerifiedEmail()) {
-     //User had verified his/her email
-} else {
-     //User had not verified his/her email
-}</p></code></pre>
+    <pre class="prettyprint"><code><p>if (user.hasVerifiedEmail()) {<br>     //User had verified his/her email<br>} else {<br>     //User had not verified his/her email<br>}</p></code></pre>
     
 
     
@@ -5437,9 +5257,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2313
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2340
+        </div>
         
     </div>
 
@@ -5500,11 +5320,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>if (user.hasVerifiedMobileNumber()) {
-     //User had verified his/her mobile number
-} else {
-     //User had not verified his/her mobile number
-}</p></code></pre>
+    <pre class="prettyprint"><code><p>if (user.hasVerifiedMobileNumber()) {<br>     //User had verified his/her mobile number<br>} else {<br>     //User had not verified his/her mobile number<br>}</p></code></pre>
     
 
     
@@ -5520,9 +5336,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2268
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2295
+        </div>
         
     </div>
 
@@ -5665,9 +5481,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2326
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2353
+        </div>
         
     </div>
 
@@ -5843,14 +5659,7 @@ of the function.</td>
         
 
     
-    <pre class="prettyprint"><code><p>user.likeProduct(product, like, {
-         success: function(user) {
-             //User liked/disliked the product
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-})</p></code></pre>
+    <pre class="prettyprint"><code><p>user.likeProduct(product, like, {<br>         success: function(user) {<br>             //User liked/disliked the product<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>})</p></code></pre>
     
 
     
@@ -5866,9 +5675,9 @@ of the function.</td>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2916
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2944
+        </div>
         
     </div>
 
@@ -5878,10 +5687,7 @@ of the function.</td>
     
     
     <div class="description">
-        <p>Logs in a user with a mobile phone number and sms code sent by
-AV.User.requestLoginSmsCode.On success, this
-saves the session to disk, so you can retrieve the currently logged in
-user using <code>current</code>.</p>
+        <p>Logs in a user with a mobile phone number and sms code sent by<br>AV.User.requestLoginSmsCode.On success, this<br>saves the session to disk, so you can retrieve the currently logged in<br>user using <code>current</code>.</p>
 <p>Calls options.success or options.error on completion.</p>
     </div>
     
@@ -6040,8 +5846,7 @@ user using <code>current</code>.</p>
                         
                     
             </td>
-            <td class="description last">A promise that is fulfilled with the user when
-    the login completes.</td>
+            <td class="description last">A promise that is fulfilled with the user when<br>    the login completes.</td>
         </tr>
     
     </tbody>
@@ -6054,13 +5859,7 @@ user using <code>current</code>.</p>
         
 
     
-    <pre class="prettyprint"><code><p>SH.User.logInWithMobilePhoneSmsCode(&quot;186xxxxxxxx&quot;, &quot;123456&quot;, {
-       success: function() {
-         // Password reset request was sent successfully
-       },
-       error: function(error) {
-         //SH.showError(error);
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>SH.User.logInWithMobilePhoneSmsCode(&quot;186xxxxxxxx&quot;, &quot;123456&quot;, {<br>       success: function() {<br>         // Password reset request was sent successfully<br>       },<br>       error: function(error) {<br>         //SH.showError(error);<br>     });</p></code></pre>
     
 
     
@@ -6076,9 +5875,9 @@ user using <code>current</code>.</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2082
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2109
+        </div>
         
     </div>
 
@@ -6088,8 +5887,7 @@ user using <code>current</code>.</p>
     
     
     <div class="description">
-        <p>Recommended way to
-Initialize a new instance of the Class</p>
+        <p>Recommended way to<br>Initialize a new instance of the Class</p>
     </div>
     
 
@@ -6208,9 +6006,9 @@ Initialize a new instance of the Class</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2429
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2456
+        </div>
         
     </div>
 
@@ -6324,9 +6122,9 @@ Initialize a new instance of the Class</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2437
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2464
+        </div>
         
     </div>
 
@@ -6467,14 +6265,7 @@ Initialize a new instance of the Class</p>
         
 
     
-    <pre class="prettyprint"><code><p>user.subscribe(shop, {
-         success: function(user) {
-             //Updated user
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>user.subscribe(shop, {<br>         success: function(user) {<br>             //Updated user<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -6490,9 +6281,9 @@ Initialize a new instance of the Class</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2656
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2684
+        </div>
         
     </div>
 
@@ -6633,14 +6424,7 @@ Initialize a new instance of the Class</p>
         
 
     
-    <pre class="prettyprint"><code><p>user.unfollow(user, {
-         success: function(user) {
-             //Updated user
-         },
-         error: function(error) {
-             //SH.showError(error);
-         }
-     });</p></code></pre>
+    <pre class="prettyprint"><code><p>user.unfollow(user, {<br>         success: function(user) {<br>             //Updated user<br>         },<br>         error: function(error) {<br>             //SH.showError(error);<br>         }<br>     });</p></code></pre>
     
 
     
@@ -6656,9 +6440,9 @@ Initialize a new instance of the Class</p>
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 2400
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 2427
+        </div>
         
     </div>
 
@@ -6781,7 +6565,7 @@ Initialize a new instance of the Class</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Fri Nov 06 2015 00:34:35 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Apr 15 2016 02:13:27 GMT+1000 (AEST)
         </footer>
     </div>
 </div>

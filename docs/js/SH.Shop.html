@@ -80,6 +80,8 @@
             
                 <li data-name="SH.showError"><a href="SH.html#.showError">showError</a></li>
             
+                <li data-name="SH.switchUser"><a href="SH.html#.switchUser">switchUser</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -238,13 +240,7 @@
             
                 <li data-name="SH.Purchase#new"><a href="SH.Purchase.html#new">new</a></li>
             
-                <li data-name="SH.Purchase#refreshDelivery"><a href="SH.Purchase.html#refreshDelivery">refreshDelivery</a></li>
-            
-                <li data-name="SH.Purchase#refreshDeliveryInCent"><a href="SH.Purchase.html#refreshDeliveryInCent">refreshDeliveryInCent</a></li>
-            
                 <li data-name="SH.Purchase#refreshPrice"><a href="SH.Purchase.html#refreshPrice">refreshPrice</a></li>
-            
-                <li data-name="SH.Purchase#refreshPriceInCent"><a href="SH.Purchase.html#refreshPriceInCent">refreshPriceInCent</a></li>
             
                 <li data-name="SH.Purchase#removeProduct"><a href="SH.Purchase.html#removeProduct">removeProduct</a></li>
             
@@ -394,7 +390,7 @@
             
                 <li data-name="SH.User.signUp"><a href="SH.User.html#.signUp">signUp</a></li>
             
-                <li data-name="SH.User.signUpOrlogInWithAccessToken"><a href="SH.User.html#.signUpOrlogInWithAccessToken">signUpOrlogInWithAccessToken</a></li>
+                <li data-name="SH.User.signUpOrloginWithAccessToken"><a href="SH.User.html#.signUpOrloginWithAccessToken">signUpOrloginWithAccessToken</a></li>
             
                 <li data-name="SH.User.signUpOrlogInWithMobilePhone"><a href="SH.User.html#.signUpOrlogInWithMobilePhone">signUpOrlogInWithMobilePhone</a></li>
             
@@ -475,9 +471,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1470
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1587
+        </div>
         
     </div>
 
@@ -527,29 +523,6 @@
 	
         <tr>
             
-                <td class="name"><code>aboutPage</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>HTML String of the About Page</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
                 <td class="name"><code>address</code></td>
             
             
@@ -567,6 +540,29 @@
             
             
             <td class="description last"><p>Address of this Shop</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>contact</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Various contact info of this Shop</p></td>
         </tr>
 	
 	
@@ -596,52 +592,6 @@
 	
         <tr>
             
-                <td class="name"><code>email</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Email of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>facebook</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Facebook URL of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
                 <td class="name"><code>icon</code></td>
             
             
@@ -665,13 +615,13 @@
 	
         <tr>
             
-                <td class="name"><code>instagram</code></td>
+                <td class="name"><code>live</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Boolean</span>
 
 
             
@@ -681,30 +631,7 @@
             
             
             
-            <td class="description last"><p>Instagram URL of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>lessFile</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">AV.File</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>LessFile of this Shop</p></td>
+            <td class="description last"><p>THe sandbox variable for a particular shop</p></td>
         </tr>
 	
 	
@@ -734,52 +661,6 @@
 	
         <tr>
             
-                <td class="name"><code>menuTextColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>MenuTextColor of this Shop, in hex string</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>menuTextHoverColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>MenuTextHoverColor of this Shop, in hex string</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
                 <td class="name"><code>name</code></td>
             
             
@@ -796,7 +677,7 @@
             
             
             
-            <td class="description last"><p>Name of this Shop</p></td>
+            <td class="description last"><p>Casual Name of this Shop. E.g. SK8 Tech</p></td>
         </tr>
 	
 	
@@ -819,30 +700,7 @@
             
             
             
-            <td class="description last"><p>The official name of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>contactNumber</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>The contact number of this Shop</p></td>
+            <td class="description last"><p>The official name of this Shop E.g. SK8 PTY LTD</p></td>
         </tr>
 	
 	
@@ -872,13 +730,13 @@
 	
         <tr>
             
-                <td class="name"><code>page</code></td>
+                <td class="name"><code>social</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">SH.Page</span>
+<span class="param-type">Object</span>
 
 
             
@@ -888,168 +746,7 @@
             
             
             
-            <td class="description last"><p>Page of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>wechat</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Wechat ID of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>pinterest</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Pinterest URL of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>primaryColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>PrimaryColor of this Shop, in hex string</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>qq</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>QQ of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>sinaWeibo</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>SinaWeibo URL of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>secondaryColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>SecondaryColor of this Shop, in hex string</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>outstandingBalanceInCent</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Int</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Outstanding balance of this shop.</p></td>
+            <td class="description last"><p>Various social media info of this shop.</p></td>
         </tr>
 	
 	
@@ -1079,52 +776,6 @@
 	
         <tr>
             
-                <td class="name"><code>customURL</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>CustomURL of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>summary</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Summary of this Shop</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
                 <td class="name"><code>tagline</code></td>
             
             
@@ -1145,29 +796,6 @@
         </tr>
 	
 	
-	
-        <tr>
-            
-                <td class="name"><code>twitter</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Twitter URL of this Shop</p></td>
-        </tr>
-	
-	
 	</tbody>
 </table></dl>
         
@@ -1177,6 +805,8 @@
     
     
 
+    
+        <dt class="important tag-deprecated">Deprecated</dt><dd><ul class="dummy"><li>{String} summary Use shop.social.description instead.</li><ul></dd>
     
     
     
@@ -1259,9 +889,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1798
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1803
+        </div>
         
     </div>
 
@@ -1367,9 +997,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1819
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1824
+        </div>
         
     </div>
 
@@ -1505,14 +1135,7 @@
         
 
     
-    <pre class="prettyprint"><code><p>shop.getMembership(user, {
-     success: function(membership) {
-         //Membership downloaded successfully
-     },
-     error: function(error) {
-         //SH.showError(error);
-     }
-})</p></code></pre>
+    <pre class="prettyprint"><code><p>shop.getMembership(user, {<br>     success: function(membership) {<br>         //Membership downloaded successfully<br>     },<br>     error: function(error) {<br>         //SH.showError(error);<br>     }<br>})</p></code></pre>
     
 
     
@@ -1528,9 +1151,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1808
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1813
+        </div>
         
     </div>
 
@@ -1607,9 +1230,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1785
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1790
+        </div>
         
     </div>
 
@@ -1686,9 +1309,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1773
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1778
+        </div>
         
     </div>
 
@@ -1749,11 +1372,7 @@
         
 
     
-    <pre class="prettyprint"><code><p>if (shop.isLive()) {
-     //Shop is live
-} else {
-     //Shop is under development
-}</p></code></pre>
+    <pre class="prettyprint"><code><p>if (shop.isLive()) {<br>     //Shop is live<br>} else {<br>     //Shop is under development<br>}</p></code></pre>
     
 
     
@@ -1769,9 +1388,9 @@
         </h4>
     
         
-        <!-- <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/shelf/lib/shelf-doc.js, line 1509
-        </div> -->
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1614
+        </div>
         
     </div>
 
@@ -1781,8 +1400,7 @@
     
     
     <div class="description">
-        <p>Recommended way to
-Initialize a new instance of the Class</p>
+        <p>Recommended way to<br>Initialize a new instance of the Class</p>
     </div>
     
 
@@ -1908,7 +1526,7 @@ Initialize a new instance of the Class</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Fri Nov 06 2015 00:34:35 GMT+1100 (AEDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Apr 15 2016 02:13:27 GMT+1000 (AEST)
         </footer>
     </div>
 </div>
