@@ -242,6 +242,8 @@
             
                 <li data-name="SH.Purchase#refreshPrice"><a href="SH.Purchase.html#refreshPrice">refreshPrice</a></li>
             
+                <li data-name="SH.Purchase#refreshPriceInCent"><a href="SH.Purchase.html#refreshPriceInCent">refreshPriceInCent</a></li>
+            
                 <li data-name="SH.Purchase#removeProduct"><a href="SH.Purchase.html#removeProduct">removeProduct</a></li>
             
                 <li data-name="SH.Purchase#validatePurchase"><a href="SH.Purchase.html#validatePurchase">validatePurchase</a></li>
@@ -1741,12 +1743,12 @@
     <div class="nameContainer">
         <h4 class="name" id="refreshPrice">
             
-            refreshPrice<span class="signature">(discountRate, coupon, deliveryPriceInCent)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Float}</span>
+            refreshPrice<span class="signature">(deliveryPrice, discountRate, coupon)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Float}</span>
         </h4>
     
         
         <div class="tag-source">
-            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1170
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1169
         </div>
         
     </div>
@@ -1784,6 +1786,29 @@
 	</thead>
 	
 	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>deliveryPrice</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the amount will be added to the  total price, in dollar</p></td>
+        </tr>
+	
 	
 	
         <tr>
@@ -1827,30 +1852,7 @@
             
             <td class="description last">
                 
-                <p>the amount will be substracted from the  total price.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>deliveryPriceInCent</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Int</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>the amount will be added to the  total price.</p></td>
+                <p>the amount will be substracted from the  total price, in dollar</p></td>
         </tr>
 	
 	
@@ -1916,6 +1918,197 @@
                     
             </td>
             <td class="description last">price The price in dollar, <strong>including</strong> delivery price if provided.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="refreshPriceInCent">
+            
+            refreshPriceInCent<span class="signature">(deliveryPriceInCent, discountRate, couponPriceInCent)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Int}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1118
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Refresh the price, in <strong>CENT</strong>, for all purchase entries in this purchase</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>deliveryPriceInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the amount will be added to the  total price, in cent</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>discountRate</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Float</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the discount rate</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>couponPriceInCent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the amount will be substracted from the  total price, in cent</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Int
+                        
+                    
+            </td>
+            <td class="description last">priceInCent The price in cent, <strong>including</strong> delivery price if provided</td>
         </tr>
     
     </tbody>
@@ -2167,7 +2360,7 @@
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Apr 15 2016 02:13:27 GMT+1000 (AEST)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Apr 15 2016 13:02:59 GMT+1000 (AEST)
         </footer>
     </div>
 </div>
