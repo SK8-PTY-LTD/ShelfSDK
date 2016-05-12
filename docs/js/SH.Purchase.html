@@ -12,7 +12,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content=""/>
     <meta property="og:site_name" content="Shelf JS Guide"/>
-    <meta property="og:url" content="http://shelf.js/docs/js/"/>
+    <meta property="og:url" content="http://shelfsdk.com/docs/js/"/>
     
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -26,7 +26,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":true,"cleverLinks":true,"default":{"outputSourceFiles":false,"destination":"../../js/"},"applicationName":"Shelf JS Guide","googleAnalytics":"","openGraph":{"title":"Shelf JS Guide","type":"website","image":"","site_name":"Shelf JS Guide","url":"http://shelf.js/docs/js/"},"meta":{"title":"Shelf JS Guide","description":"","keyword":""},"linenums":true};
+    var config = {"monospaceLinks":true,"cleverLinks":true,"default":{"outputSourceFiles":false,"destination":"../../js/"},"applicationName":"Shelf JS Guide","googleAnalytics":"","openGraph":{"title":"Shelf JS Guide","type":"website","image":"","site_name":"Shelf JS Guide","url":"http://shelfsdk.com/docs/js/"},"meta":{"title":"Shelf JS Guide","description":"","keyword":""},"linenums":false};
     </script>
     
 
@@ -474,7 +474,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 940
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 963
         </div>
         
     </div>
@@ -663,29 +663,6 @@
 	
         <tr>
             
-                <td class="name"><code>deliveryAddress</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="SH.Address.html">SH.Address</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>The delivery delivery address of this Purchase</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
                 <td class="name"><code>deliveryPriceInCent</code></td>
             
             
@@ -778,6 +755,29 @@
 	
         <tr>
             
+                <td class="name"><code>entryArray</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The array containing all entry info. This is remote copy, DO NOT call entryArray.push. Use purchase.addProduct() instead.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
                 <td class="name"><code>gstInCent</code></td>
             
             
@@ -818,6 +818,29 @@
             
             
             <td class="description last"><p>The gst of this Purchase, in dollar</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>postalInfo</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The object containing the delivery address for the purchase</p></td>
         </tr>
 	
 	
@@ -962,6 +985,29 @@
 	
         <tr>
             
+                <td class="name"><code>totalQuantity</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The total quantity of all entries in this Purchase</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
                 <td class="name"><code>totalPrice</code></td>
             
             
@@ -982,6 +1028,29 @@
         </tr>
 	
 	
+	
+        <tr>
+            
+                <td class="name"><code>Transaction</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SH.Transaction.html">SH.Transaction</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>transaction object representing the payment</p></td>
+        </tr>
+	
+	
 	</tbody>
 </table></dl>
         
@@ -991,6 +1060,8 @@
     
     
 
+    
+        <dt class="important tag-deprecated">Deprecated</dt><dd><ul class="dummy"><li>{SH.Address} deliveryAddress Deprecated. Use purchase.postalInfo instead.</li><ul></dd>
     
     
     
@@ -1263,12 +1334,12 @@
     <div class="nameContainer">
         <h4 class="name" id="addProduct">
             
-            addProduct<span class="signature">(buyer, product, quantity)</span>
+            addProduct<span class="signature">(product, quantity, summary)</span>
         </h4>
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 998
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 1026
         </div>
         
     </div>
@@ -1306,29 +1377,6 @@
 	</thead>
 	
 	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>buyer</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="SH.User.html">SH.User</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The buyer of the purchase</p></td>
-        </tr>
-	
 	
 	
         <tr>
@@ -1373,6 +1421,29 @@
             <td class="description last">
                 
                 <p>The quantity adding to cart</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>summary</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The summary for this entry</p></td>
         </tr>
 	
 	
@@ -1438,7 +1509,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1071
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 1112
         </div>
         
     </div>
@@ -1517,7 +1588,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1104
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 1145
         </div>
         
     </div>
@@ -1546,6 +1617,8 @@
     
     
 
+    
+        <dt class="important tag-deprecated">Deprecated</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
     
     
     
@@ -1617,7 +1690,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 972
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 999
         </div>
         
     </div>
@@ -1748,7 +1821,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1169
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 1219
         </div>
         
     </div>
@@ -1939,7 +2012,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1118
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 1161
         </div>
         
     </div>
@@ -1997,7 +2070,7 @@
             
             <td class="description last">
                 
-                <p>the amount will be added to the  total price, in cent</p></td>
+                <p>the amount will be added to the  total price, in cent. If provided, deliveryPriceInCent will be updated to increase/decrease totalPriceInCent(Negative is allowed). If not provided, deliveryPriceInCent is not updated. If you wish to reset, call refreshPriceInCent(0);</p></td>
         </tr>
 	
 	
@@ -2020,7 +2093,7 @@
             
             <td class="description last">
                 
-                <p>the discount rate</p></td>
+                <p>the discount rate. It must be between 0 and 1, otherwise error will be thrown and discount will be reset to 0.</p></td>
         </tr>
 	
 	
@@ -2043,7 +2116,7 @@
             
             <td class="description last">
                 
-                <p>the amount will be substracted from the  total price, in cent</p></td>
+                <p>the amount will be substracted from the  total price, in cent. It must be positive, otherwise error will be thrown and coupon will be reset to 0.</p></td>
         </tr>
 	
 	
@@ -2130,7 +2203,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1044
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 1080
         </div>
         
     </div>
@@ -2254,7 +2327,7 @@
     
         
         <div class="tag-source">
-            C:/Users/13334/Desktop/Shelf/Shelf_Web/public/lib/shelf/shelf-doc.js, line 1080
+            /Users/XujieSong/Documents/SK8Tech/Dropbox/#SK8Tech/Tech/Web/Shelf_Web/cdn/shelf/0.12.54/shelf-doc.js, line 1126
         </div>
         
     </div>
@@ -2360,7 +2433,7 @@
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Sat Apr 16 2016 20:55:19 GMT+1000 (AUS Eastern Standard Time)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri May 06 2016 23:54:49 GMT+1000 (AEST)
         </footer>
     </div>
 </div>
